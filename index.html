@@ -1,144 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Languages Quiz</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-    <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Quiz</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
         <section class="timer-box">
-            <h1><span></span> second(s) left...</h1>
+            <h1>
+                <span id="timer-count"></span> second(s) left...
+            </h1>
         </section>
-
-        <section class="intro">
+        <section id="quiz-intro">
             <h1>Coding Languages Quiz</h1>
             <p>Welcome to the Coding Languages Quiz! This quiz will give you a random set of questions about what we have learned in our Coding Classes so far. Please click "Start" to begin.</p>
-            <button id="start-button">Start</button>
+            <button id="start-quiz">Start</button>
         </section>
-
-        <section class="question">
-            <card id="box1">
+        <section id="quiz-card">
+            <card class="box">
                 <h2>Question _</h2>
-                <p>Actual question</p>
+                <p id="quiz-question"></p>
                 <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box2">
-                <h2>Question _</h2>
-                <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box3">
-            <h2>Question _</h2>
-            <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box4">
-            <h2>Question _</h2>
-            <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box5">
-            <h2>Question _</h2>
-            <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box6">
-            <h2>Question _</h2>
-            <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box7">
-            <h2>Question _</h2>
-            <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box8">
-                <h2>Question _</h2>
-                <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box9">
-                <h2>Question _</h2>
-                <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                </ol>
-            </card>
-
-            <card id="box10">
-                <h2>Question _</h2>
-                <p>Actual question</p>
-                <ol>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
-                    <li><button>answer</button></li>
+                    <li><button id="answer1">answer</button></li>
+                    <li><button id="answer2">answer</button></li>
+                    <li><button id="answer3">answer</button></li>
+                    <li><button id="answer4">answer</button></li>
                 </ol>
             </card>
         </section>
-
-        <section class ="score-and-initials">
+        <section id="score-and-initials">
             <h2>Your score: <span></span></h2>
             <h2>Your initials:</h2>
             <input type="text" name="your initials"/>
             <button id="submit-button">Submit</button>
         </section>
-
-        <section class="highscore-page">
+        <section id="highscore-page">
             <h1>Highscore List</h1>
             <ol>
                 <li>initials</li>
@@ -154,11 +52,6 @@
                 <li>initials</li>
             </ol>
         </section>
-    </main>
-</body>
-
-
-
-
-
+        <script src="assets/script.js"></script>
+    </body>
 </html>
