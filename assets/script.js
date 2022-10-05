@@ -1,16 +1,30 @@
-//Opening page
-    //Render page
-    //Start button
-        //event listener
-            //for loop to render first page
+//section variables
+var quizIntro = document.getElementById('quiz-intro');
+var quizCard = document.getElementById('quiz-card');
+var scoreAndInitials = document.getElementById('score-and-initials');
+var highscorePage = document.getElementById('highscore-page');
 
-//Question pages
-    //render page
-    //event listeners for taking the decision and storing boolean in local storage
+//timer
+var timerCount = document.getElementById('timer-count');
+var remainingTime = 45;//time in sec
+var intervalTimer = undefined;
 
-//Score is tallied
-    //take array/string from local storage and display score
-    //render text field to input initials/text and put in local storage for high score page
+//initial state of sections when page loads
+quizIntro.style.display = 'initial';
+quizCard.style.display = 'none';
+scoreAndInitials.style.display = 'none';
+highscorePage.style.display = 'none';
 
-//High score page
-    //display highscore & initials in an ordered list
+//Button Variables
+var startQuiz = document.getElementById('start-quiz');
+
+//event listeners
+startQuiz.addEventListener('click', (event) => {
+    quizIntro.style.display = 'none';
+    quizCard.style.display = 'initial';
+    updateQuizCard();
+    if (intervalTimer === undefined) {
+        intervalTimer = setInterval(timerEventHandler, 1000)
+    }
+});
+
