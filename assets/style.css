@@ -15,8 +15,7 @@ button{
     background-color:coral;
 }
 
-section#quiz-intro{
-    margin: 300, 200, 200, 300;
+section#quiz-intro, section#quiz-card{
     padding: 20%;
     text-align:center;
 }
@@ -26,37 +25,33 @@ button#start-quiz{
     align-items:center;
 }
 
-card#box1, card#box2, card#box3, card#box4, card#box5, card#box6, card#box7, card#box8, card#box9, card#box10, section#score-and-initials, section#highscore-page{
+section#quiz-card, section#score-and-initials, section#highscore-page{
     background-color:peachpuff;
     display:flex;
-    width:900px;
+    width:450px;
     min-height:fit-content;
-    margin-left:33%;
-    margin-right:33%;
-    margin-top:15%;
-    margin-bottom:15%;
     flex-direction:column;
     border-color:blue;
     border-style:groove;
     border-width: thick;
 }
 
-card#box1 h2, card#box2 h2, card#box3 h2, card#box4 h2, card#box5 h2, card#box6 h2, card#box7 h2, card#box8 h2, card#box9 h2, card#box10 h2{
+section#quiz-card h2,{
     margin-left: 40%;
     margin-right: 40%;
 }
 
-card#box1 p, card#box2 p, card#box3 p, card#box4 p, card#box5 p, card#box6 p, card#box7 p, card#box8 p, card#box9 p, card#box10 p{
+section#quizcard p{
     margin-left: 2.5%;
     margin-right: 2.5%
 }
 
-card#box1 ol, card#box2 ol, card#box3 ol, card#box4 ol, card#box5 ol, card#box6 ol, card#box7 ol, card#box8 ol, card#box9 ol, card#box10 ol, section.highscore-page ol{
+section#quiz-card ol, section#highscore-page ol{
     margin-top:50px;
     margin-left:5%;
 }
 
-card#box1 ol li, card#box2 ol li, card#box3 ol li, card#box4 ol li, card#box5 ol li, card#box6 ol li, card#box7 ol li, card#box8 ol li, card#box9 ol li, card#box10 ol li, section.highscore-page ol li{
+section#quiz-card ol li, section#highscore-page ol li{
     margin-top:1.5%;
     margin-bottom:8%;
 }

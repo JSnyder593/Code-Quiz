@@ -17,7 +17,7 @@ var answer3 = document.getElementById('answer3');
 var answer4 = document.getElementById('answer4');
 
 //Set initial state of sections
-quizIntro.style.display = 'initial';
+quizIntro.style.display = 'visible';
 quizCard.style.display = 'none';
 scoreAndInitials.style.display = 'none';
 highscorePage.style.display = 'none';
@@ -70,7 +70,7 @@ function updateTimerDisplay() {
 
 function endQuiz() {
     quizCard.style.display = 'none';
-    scoreAndInitials.style.display = 'initial';
+    scoreAndInitials.style.display = '';
     clearInterval(intervalTimer);
     intervalTimer = undefined;
     currentQuestion = 0;
@@ -99,7 +99,7 @@ function timerEventHandler() {
 
 startQuiz.addEventListener('click', (event) => {
     quizIntro.style.display = 'none';
-    quizCard.style.display = 'initial';
+    quizCard.style.display = '';
     updateQuizCard();
     if (intervalTimer === undefined) {
         intervalTimer = setInterval(timerEventHandler, 1000)
@@ -108,7 +108,7 @@ startQuiz.addEventListener('click', (event) => {
 
 submitBtn.addEventListener('click', (event) =>{ 
 
-    
+
 });
 
 answer1.addEventListener('click', (event) => {
