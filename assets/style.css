@@ -15,12 +15,18 @@ button{
     background-color:coral;
 }
 
-section.intro{
+section#quiz-intro{
+    margin: 300, 200, 200, 300;
     padding: 20%;
     text-align:center;
 }
 
-card#box1, card#box2, card#box3, card#box4, card#box5, card#box6, card#box7, card#box8, card#box9, card#box10, section.score-and-initials, section.highscore-page{
+button#start-quiz{
+    text-align: center;
+    align-items:center;
+}
+
+card#box1, card#box2, card#box3, card#box4, card#box5, card#box6, card#box7, card#box8, card#box9, card#box10, section#score-and-initials, section#highscore-page{
     background-color:peachpuff;
     display:flex;
     width:900px;
@@ -55,7 +61,7 @@ card#box1 ol li, card#box2 ol li, card#box3 ol li, card#box4 ol li, card#box5 ol
     margin-bottom:8%;
 }
 
-section.highscore-page h1{
+section#highscore-page h1{
     margin-left: 40%;
     margin-right: 40%;
 }
